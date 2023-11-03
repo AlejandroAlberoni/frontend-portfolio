@@ -1,11 +1,12 @@
 import Image from 'next/image'
-import Navbar from './navbar/page'
+import HelloPresentation from './components/hellopresentation'
+import MidPage from './components/midpage'
 
 export default function Home() {
   return (
     <main>
-      <Navbar></Navbar>
-      HELO
+      <HelloPresentation></HelloPresentation>
+      <MidPage></MidPage>
     </main>
   )
 }
