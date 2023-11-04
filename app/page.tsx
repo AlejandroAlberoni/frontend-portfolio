@@ -1,11 +1,13 @@
 import Image from 'next/image'
-import HelloPresentation from './components/hellopresentation'
+import TopWrapper from './components/top_page'
 import MidPage from './components/midpage'
+import NavigationContext from './components/navbar'
 
 export default function Home() {
   return (
     <main>
-      <HelloPresentation></HelloPresentation>
+      <TopWrapper></TopWrapper>
+      <NavigationContext></NavigationContext>
       <MidPage></MidPage>
     </main>
   )
