@@ -8,7 +8,7 @@ const NavigationContext = () => {
       <div className='m-4 sm:m-0'>
         <h2 className='animate-blurred-fade-in font-lexendexa font-bold text-lg tracking-widest antialiased'>A.T.R.A</h2>
       </div>
-      <div className='sm:flex space-x-3 sm:space-x-6 font-Staatliches text-xl sm:tracking-[0.2em] tracking-normal '>
+      <div className='grid sm:flex space-x-3 sm:space-x-6 font-Staatliches text-xl sm:tracking-[0.2em] tracking-normal '>
         <Link href={"/"}>Home</Link>
         <Link href={"/"}>Projects</Link>
         <Link href={"/"}>Academic</Link>
