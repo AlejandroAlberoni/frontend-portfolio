@@ -22,7 +22,7 @@ const config: Config = {
       "animation": {
         "fade-in": "fade-in 1s ease-in",
         "fade-in-left": "fade-in-left 1s ease-in-out",
-        "blurred-fade-in": "blurred-fade-in 0.9s ease-in-out",
+        "blurred-fade-in": "blurred-fade-in 3s ease-in-out",
       },
       keyframes: {
         "fade-in": {
