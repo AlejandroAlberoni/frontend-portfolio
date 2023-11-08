@@ -4,7 +4,7 @@ import React from 'react'
 
 const NavigationContext = () => {
   return (
-    <div className='sm:flex w-full h-auto justify-between p-12 text-center border-b-[2px] border-black'>
+    <div className='sm:flex w-full h-auto justify-between p-4 sm:p-12 text-center border-b-[2px] border-black'>
       <div className='m-4 sm:m-0'>
         <h2 className='animate-blurred-fade-in font-lexendexa font-bold text-lg tracking-widest antialiased'>A.T.R.A</h2>
       </div>

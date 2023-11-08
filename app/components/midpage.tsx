@@ -6,8 +6,8 @@ const MidPage = () => {
   const midtext_split: Array<String> = "This project is intended to be a front-end portfolio. Brainstormed the design using Figma. It is supposed to have some various stuff.".split(" ")
 
   return (
-    <div className='sm:grid sm:grid-cols-2 place-items-center mt-[10%]'>
-      <div className='text-center sm:text-left p-10 sm:mx-20 font-Inter font-semibold text-[35px] leading-snug subpixel-antialiased '>
+    <div className='grid sm:grid-cols-2 place-items-center mt-[10%]'>
+      <div className=' text-center sm:text-left p-10 sm:mx-20 font-Inter font-semibold text-[35px] leading-tight lg:leading-snug subpixel-antialiased '>
         This page is intended to be a front-end learning project. Brainstormed the design using Figma. It is supposed to have some various stuff.
       </div>
       <div>
