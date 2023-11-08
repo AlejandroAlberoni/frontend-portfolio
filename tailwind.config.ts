@@ -20,15 +20,12 @@ const config: Config = {
         'Staatliches': ['Staatliches', 'sans-serif'],
       },
       "animation": {
-        "fade-in": "fade-in 1s ease-in",
         "fade-in-left": "fade-in-left 1s ease-in-out",
         "blurred-fade-in": "blurred-fade-in 3s ease-in-out",
+        "slide-in-right": "slide-in-right 1s ease-out",
+        "expand-vertically": "expand-vertically 0.6s ease-out",
       },
       keyframes: {
-        "fade-in": {
-          "0%": { "opacity": "0" },
-          "100%": { "opacity": "1" },
-        },
         "fade-in-left": {
           "0%": {
             "opacity": "0",
@@ -47,6 +44,30 @@ const config: Config = {
           "100%": {
             "filter": "blur(0)",
             "opacity": "1"
+          }
+        },
+        "slide-in-right": {
+          "0%": {
+            "transform": "translateX(100px)"
+          },
+          "100%": {
+            "transform": "translateX(0)"
+          }
+        },
+        "expand-horizontally": {
+          "0%": {
+            "transform": "scaleX(0)"
+          },
+          "100%": {
+            "transform": "scaleX(1)"
+          }
+        },
+        "expand-vertically": {
+          "0%": {
+            "transform": "scaleY(0)"
+          },
+          "100%": {
+            "transform": "scaleY(1)"
           }
         }
       }
