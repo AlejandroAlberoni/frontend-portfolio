@@ -9,11 +9,11 @@ const NavigationContext = () => {
         <h2 className='lg:animate-blurred-fade-in font-lexendexa font-bold text-lg tracking-widest antialiased'>A.T.R.A</h2>
       </div>
       <div className='grid sm:flex sm:place-items-baseline mt:animate-expand-vertically sm:animate-none space-x-3 sm:space-x-8 font-Staatliches text-xl sm:tracking-[0.2em] tracking-normal'>
-        <Link className='p-3 hover:border-slate-200 hover:rounded-[6px] duration-500 hover:bg-black hover:text-white' href={"/"}>Home</Link>
-        <Link className='p-3 hover:border-slate-200 hover:rounded-[6px] duration-500 hover:bg-black hover:text-white' href={"/"}>Projects</Link>
-        <Link className='p-3 hover:border-slate-200 hover:rounded-[6px] duration-500 hover:bg-black hover:text-white' href={"/"}>Academic</Link>
-        <Link className='p-3 hover:border-slate-200 hover:rounded-[6px] duration-500 hover:bg-black hover:text-white' href={"/"}>Author</Link>
-        <Link className='p-3 hover:border-slate-200 hover:rounded-[6px] duration-500 hover:bg-black hover:text-white' href={"/"}>Contact</Link>
+        <Link className='sm:p-3 hover:rounded-[6px] duration-500 hover:bg-black hover:text-white hover:shadow-2xl' href={"/"}>Home</Link>
+        <Link className='sm:p-3 hover:rounded-[6px] duration-500 hover:bg-black hover:text-white hover:shadow-2xl' href={"/"}>Projects</Link>
+        <Link className='sm:p-3 hover:rounded-[6px] duration-500 hover:bg-black hover:text-white hover:shadow-2xl' href={"/"}>Academic</Link>
+        <Link className='sm:p-3 hover:rounded-[6px] duration-500 hover:bg-black hover:text-white hover:shadow-2xl' href={"/"}>Author</Link>
+        <Link className='sm:p-3 hover:rounded-[6px] duration-500 hover:bg-black hover:text-white hover:shadow-2xl' href={"/"}>Contact</Link>
       </div>
     </div>
   )

@@ -6,15 +6,17 @@ const MidPage = () => {
   const midtext_split: Array<String> = "This project is intended to be a front-end portfolio. Brainstormed the design using Figma. It is supposed to have some various stuff.".split(" ")
 
   return (
-    <div className='grid sm:grid-cols-2 place-items-center mt-[10%]'>
-      <div className=' text-center sm:text-left p-10 sm:mx-20 font-Inter font-semibold text-[35px] leading-tight lg:leading-snug subpixel-antialiased '>
-        This page is intended to be a front-end learning project. Brainstormed the design using Figma. It is supposed to have some various stuff.
-      </div>
-      <div>
-        <Image className="mt:absolute mt:y-[20] z-[-2]" src="/webpage_dalle.png" height={500} width={500} alt='Web development 3D art'></Image>
+    <div className='flex mt-16 sm:mt-[10%] w-full h-fit'>
+      <div className='flex w-5/6 sm:w-5/6 h-fit bg-[#bfbfbf] rounded-r-[100px] sm:rounded-r-full shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]'>
+        <div className='flex mr-10 mb-10 bg-[#414141] rounded-r-[100px] sm:rounded-r-full shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_10px_20px_rgba(204,_204,_204,_1)]'>
+          <p className='text-white text-center p-10 m-8 sm:m-16 font-Inter font-semibold text-[35px] leading-tight lg:leading-snug subpixel-antialiased'>
+            This page is intended to be an exploratory project through web. Brainstormed the design using Figma. It is supposed to hace some diverse stuff. (Currently under construction 11/11/23)
+          </p>
+        </div>
       </div>
     </div>
   )
 }
+
 
 export default MidPage
