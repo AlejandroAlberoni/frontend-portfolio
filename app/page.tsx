@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <main>
       <NavigationContext></NavigationContext>
-      <MidPage></MidPage>
       <PARALLAX></PARALLAX>
+      <MidPage></MidPage>
     </main>
   )
 }
