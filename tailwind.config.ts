@@ -18,6 +18,7 @@ const config: Config = {
         'Inter': ['Inter', 'sans-serif'],
         'Josefin': ['Josefin Sans', 'sans-serif'],
         'Staatliches': ['Staatliches', 'sans-serif'],
+        'Kalam': ['Kalam', 'cursive'],
       },
       "animation": {
         "fade-in-left": "fade-in-left 1s ease-in-out",
