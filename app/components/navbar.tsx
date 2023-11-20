@@ -1,11 +1,21 @@
 'use client';
 import React from 'react'
 import Link from 'next/link';
-import { useRouter } from 'next/router';
+import { usePathname } from 'next/navigation';
+import clsx from 'clsx';
+import { twMerge } from 'tailwind-merge';
+
+const navData = [
+  { name: 'home', path: '/' },
+  { name: 'projects', path: '/projects' },
+  { name: 'academic', path: '/academic' },
+  { name: 'author', path: '/author' },
+  { name: 'contact', path: '/contact' },
+
+]
 
 const NavigationContext = () => {
-  //const router = useRouter();
-  //const pathname = router.pathname;
+  const pathname = usePathname();
   const buttonlinkstyle = `sm:p-3 hover:rounded-[6px] duration-500 hover:bg-black hover:text-white hover:shadow-2xl`
   return (
     <div className='sm:flex w-full h-auto sm:justify-around p-4 sm:p-12 text-center items-center'>
@@ -13,12 +23,11 @@ const NavigationContext = () => {
         <h2 className='animate-blurred-fade-in font-lexendexa font-bold text-lg tracking-widest antialiased'>A.T.R.A</h2>
       </div>
       <div className='grid sm:flex sm:place-items-baseline animate-expand-vertically space-x-3 sm:space-x-8 font-Staatliches text-xl sm:tracking-[0.2em] tracking-normal'>
-        <Link className='' href={"/"}><div className={`${buttonlinkstyle}`}>Home</div></Link>
-        <Link className='' href={"/"}><div className={`${buttonlinkstyle}`}>Projects</div></Link>
-        <Link className='' href={"/"}><div className={`${buttonlinkstyle}`}>Academic</div></Link>
-        <Link className='' href={"/author"}><div className={`${buttonlinkstyle}`}>Author</div></Link>
-        <Link className='' href={"/contact"}><div className={`${buttonlinkstyle}`}>Contact</div></Link>
-
+        {
+          navData.map((link, index) => {
+            return <Link href={link.path} key={index} ><div className={twMerge(`${buttonlinkstyle} ${link.path == pathname && 'animate-bounce'}`)}>{link.name}</div></Link>
+          })
+        }
       </div>
     </div>
   )
