@@ -22,10 +22,10 @@ const NavigationContext = () => {
       <div className='m-4 sm:m-0'>
         <h2 className='animate-blurred-fade-in font-lexendexa font-bold text-lg tracking-widest antialiased z-50 text-black md:text-white'>A.T.R.A</h2>
       </div>
-      <div className='sm:flex flex-col sm:flex-row animate-expand-vertically gap-y-3 sm:gap-y-0 sm:space-x-8 font-Staatliches text-xl sm:tracking-[0.2em] tracking-normal'>
+      <div className='sm:flex flex-col sm:flex-row animate-expand-vertically gap-y-3 sm:gap-y-0 sm:space-x-8 font-Staatliches text-xlborder-[1px] sm:tracking-[0.2em] tracking-normal'>
         {
           navData.map((link, index) => {
-            return <Link href={link.path} key={index} ><div className={twMerge(clsx(buttonlinkstyle, link.path == pathname && 'translate-y-4 underline underline-offset-4'))}>{link.name}</div></Link>
+            return <Link href={link.path} key={index} ><div className={twMerge(clsx(buttonlinkstyle, link.path == pathname && 'sm:translate-y-4 underline underline-offset-4 decoration-2'))}>{link.name}</div></Link>
           })
         }
       </div>
