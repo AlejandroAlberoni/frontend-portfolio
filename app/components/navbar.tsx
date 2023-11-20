@@ -25,7 +25,7 @@ const NavigationContext = () => {
       <div className='sm:flex flex-col sm:flex-row animate-expand-vertically gap-y-3 sm:gap-y-0 sm:space-x-8 font-Staatliches text-xl sm:tracking-[0.2em] tracking-normal'>
         {
           navData.map((link, index) => {
-            return <Link href={link.path} key={index} ><div className={twMerge(clsx(buttonlinkstyle, `${link.path} == ${pathname} && bg-blue`))}>{link.name}</div></Link>
+            return <Link href={link.path} key={index} ><div className={twMerge(clsx(buttonlinkstyle, link.path == pathname && 'translate-y-4 underline underline-offset-4'))}>{link.name}</div></Link>
           })
         }
       </div>
