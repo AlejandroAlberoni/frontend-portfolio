@@ -16,16 +16,16 @@ const navData = [
 
 const NavigationContext = () => {
   const pathname = usePathname();
-  const buttonlinkstyle = `sm:p-3 hover:rounded-[6px] duration-500 hover:bg-black hover:text-white hover:shadow-2xl`
+  const buttonlinkstyle = `sm:p-3 text-center rounded-[6px] text-black md:text-white hover:bg-white hover:text-black duration-500 hover:shadow-2xl sm:filter sm:backdrop-blur-xl`
   return (
-    <div className='sm:flex w-full h-auto sm:justify-around p-4 sm:p-12 text-center items-center'>
+    <div className='grid sm:flex md:bg-[#414141] w-full h-auto justify-center sm:justify-around items-center p-4 sm:p-8 z-50'>
       <div className='m-4 sm:m-0'>
-        <h2 className='animate-blurred-fade-in font-lexendexa font-bold text-lg tracking-widest antialiased'>A.T.R.A</h2>
+        <h2 className='animate-blurred-fade-in font-lexendexa font-bold text-lg tracking-widest antialiased z-50 text-black md:text-white'>A.T.R.A</h2>
       </div>
-      <div className='grid sm:flex sm:place-items-baseline animate-expand-vertically space-x-3 sm:space-x-8 font-Staatliches text-xl sm:tracking-[0.2em] tracking-normal'>
+      <div className='sm:flex flex-col sm:flex-row animate-expand-vertically gap-y-3 sm:gap-y-0 sm:space-x-8 font-Staatliches text-xl sm:tracking-[0.2em] tracking-normal'>
         {
           navData.map((link, index) => {
-            return <Link href={link.path} key={index} ><div className={twMerge(`${buttonlinkstyle} ${link.path == pathname && 'animate-bounce'}`)}>{link.name}</div></Link>
+            return <Link href={link.path} key={index} ><div className={twMerge(clsx(buttonlinkstyle, `${link.path} == ${pathname} && bg-blue`))}>{link.name}</div></Link>
           })
         }
       </div>
