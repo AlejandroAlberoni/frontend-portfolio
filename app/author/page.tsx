@@ -9,7 +9,7 @@ const show_attributtes = [
 ]
 const AuthorPage = () => {
   return (
-    <div className='grid grid-cols-2 w-full h-[50vh] mt-[15vh] justify-center items-center'>
+    <div className='grid grid-cols-2 w-full h-[50vh] my-[15vh] ustify-center items-center'>
       <div className='grid place-items-center gap-y-4'>
         <Image className='' src={`/profile.png`} width={250} height={250} alt='profile_art'></Image>
         <p className='font-Kalam font-bold text-[20px] text-center'>A.T.R.A.</p>
@@ -21,15 +21,17 @@ const AuthorPage = () => {
           </div>
         </div>
       </div>
-      <div className='relative grid place-items-center'>
+      <div className='grid place-items-center gap-y-10'>
         {
           show_attributtes.map((item, index) => {
             return (
-              <div key='wrapper' className='h-200 w-[25vw] p-10'>
-                <div key={'rectangle1'} className='h-[8/10] w-[7/10] bg-[#a7a7a7] rounded-md bottom-0 left-0'>
-                  {item.label}
+              <div key='wrapper' className='relative h-[180px] w-[25vw]'>
+                <div key={'rectangle1'} className='absolute flex h-[80%] w-[70%] bg-[#a7a7a7] font-Mitr rounded-md bottom-0 left-0'>
+                  <div className=' left-0 -rotate-90'>
+                    {item.label}
+                  </div>
                 </div>
-                <div key={'rectangle2'} className='h-[8/10] w-[7/10] bg-[#414141] rounded-md top-0 right-0 z-10'>
+                <div key={'rectangle2'} className='border-2 border-black absolute flex place-items-center h-[80%] w-[70%] bg-[#414141] text-white font-Staatliches text-center rounded-md top-0 right-0 z-10'>
                   {item.info}
                 </div>
               </div>
