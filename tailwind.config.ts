@@ -19,6 +19,7 @@ const config: Config = {
         'Josefin': ['Josefin Sans', 'sans-serif'],
         'Staatliches': ['Staatliches', 'sans-serif'],
         'Kalam': ['Kalam', 'cursive'],
+        'Mitr': ['Mitr', 'sans-serif'],
       },
       "animation": {
         "fade-in-left": "fade-in-left 1s ease-in-out",
