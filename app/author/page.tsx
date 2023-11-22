@@ -25,13 +25,13 @@ const AuthorPage = () => {
         {
           show_attributtes.map((item, index) => {
             return (
-              <div key='wrapper' className='relative h-[180px] w-[25vw]'>
+              <div key='wrapper' className='relative h-[180px] w-[40vw]'>
                 <div key={'rectangle1'} className='absolute flex h-[80%] w-[70%] bg-[#a7a7a7] font-Mitr rounded-md bottom-0 left-0'>
                   <div className=' left-0 -rotate-90'>
                     {item.label}
                   </div>
                 </div>
-                <div key={'rectangle2'} className='border-2 border-black absolute flex place-items-center h-[80%] w-[70%] bg-[#414141] text-white font-Staatliches text-center rounded-md top-0 right-0 z-10'>
+                <div key={'rectangle2'} className='absolute flex place-items-center h-[80%] w-[70%] bg-[#414141] text-white font-Staatliches text-center rounded-md shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] top-0 right-0 z-10'>
                   {item.info}
                 </div>
               </div>
